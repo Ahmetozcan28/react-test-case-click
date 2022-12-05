@@ -11,8 +11,16 @@ html,
 body,
 #root {
   height: 100%;
+  background: rgb(17, 15, 15);
 }
 .screen {
-  background-color: red;
   height: 100%;
+}
+.point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
