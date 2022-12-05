@@ -3,7 +3,6 @@ import { useState } from "react";
 function App() {
   const [points, setPoints] = useState([]);
   const [data , setData] = useState([]);
-  console.log(points);
   const clickHandle = (e) => {
     setPoints((points) => [
       ...points,
