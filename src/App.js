@@ -14,14 +14,14 @@ function App() {
     ]);
     setData([])
   };
-  const redoHandle = (e) => {
+  const undoHandle = (e) => {
     e.stopPropagation()
     const data = [...points]
     const item = data.pop()
     setData(data => [...data, item])
     setPoints(data)
   };
-  const undoHandle = (e) => {
+  const redoHandle = (e) => {
     e.stopPropagation()
     const d = [...data]
     const item = d.pop()
@@ -33,8 +33,8 @@ function App() {
     <>
       <div className="screen" onClick={clickHandle}>
         <header className="header">
-          <button disabled={points.length === 0} onClick={redoHandle}>Geri Al</button>
-          <button disabled={data.length === 0} onClick={undoHandle} >İleri Al</button>
+          <button disabled={points.length === 0} onClick={undoHandle}>Geri Al</button>
+          <button disabled={data.length === 0} onClick={redoHandle} >İleri Al</button>
         </header>
         {points.map((point) => (
           <div className="point" style={{ left: point.x, top: point.y }} />
