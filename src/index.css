@@ -12,16 +12,12 @@ body,
 #root {
   height: 100%;
   cursor: pointer;
-  background-color: #110f0f;
 }
 .screen {
   height: 100%;
+  background-color: #111;
 }
 .point {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: yellow;
   position: absolute;
   transform: translate(-50%, -50%);
 }
