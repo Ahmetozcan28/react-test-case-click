@@ -20,6 +20,10 @@ body,
 .point {
   position: absolute;
   transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: yellow;
+  width: 25px;
+  height: 25px;
 }
 .header {
   position: absolute;

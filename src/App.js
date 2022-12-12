@@ -41,9 +41,8 @@ function App() {
         {points.map((point) => (
           <div
             className=" point material-symbols-outlined"
-            style={{ color: "yellow",   left: point.x, top: point.y }}
+            style={{left: point.x, top: point.y }}
           >
-            electric_bolt
           </div>
         ))}
       </div>
